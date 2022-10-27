@@ -29,7 +29,9 @@ jobs:
     - name: checkooooooooooo
       run: |
 
-        ls -la ${{GITHUB.WORKSPACE}}/app/build/outputs/apk
+        ls -la ${{GITHUB.WORKSPACE}}/app/build/outputs/apk/debug
+        echo "###############################################"
+        ls -la ${{GITHUB.WORKSPACE}}/app/build/outputs/apk/release
 
     # - uses: actions/upload-artifact@v3
     #   with:
