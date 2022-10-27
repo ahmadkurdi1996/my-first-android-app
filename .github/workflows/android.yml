@@ -33,7 +33,7 @@ jobs:
         echo "###############################################"
         ls -la ${{GITHUB.WORKSPACE}}/app/build/outputs/apk/release
 
-    # - uses: actions/upload-artifact@v3
-    #   with:
-    #     name: my-first-android-app
-    #     path: ${{GITHUB.WORKSPACE}}
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-first-android-app
+        path: ${{GITHUB.WORKSPACE}}/app/build/outputs/apk/debug/app-debug.apk
